@@ -1,5 +1,6 @@
 /* Elements */
 body {
+    font-family: pirateFont, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 20px;
@@ -9,24 +10,28 @@ body {
     color: rgb(214, 214, 214);
 }
 
+th, td {
+    padding: 5px;
+  }
+
 .img-container img {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    
 }
 
 .img-actor-container img {
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    max-width: 15vw;
 }
 
 .images-actor-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
@@ -66,6 +71,10 @@ a {
 /* Classes */
 .caption {
     display: block;
+}
+
+.img-actor-container {
+    width: 100%;
 }
 
 .container {
